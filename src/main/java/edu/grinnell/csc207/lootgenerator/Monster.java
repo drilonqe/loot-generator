@@ -1,3 +1,5 @@
+package edu.grinnell.csc207.lootgenerator;
+
 public class Monster {
     private String name;
     private String type;
@@ -19,16 +21,18 @@ public class Monster {
         this.treasureClass = treasureClass;
     }
 
-   /**
-    * returns name of monster
-    * @return String
-    */
+    /**
+     * returns name of monster
+     * 
+     * @return String
+     */
     public String getName() {
         return name;
     }
 
     /**
      * returns type of monster
+     * 
      * @return String
      */
     public String getType() {
@@ -37,6 +41,7 @@ public class Monster {
 
     /**
      * returns treasure class of monster
+     * 
      * @return String
      */
     public String getTreasureClass() {
@@ -45,6 +50,7 @@ public class Monster {
 
     /**
      * returns level of monster
+     * 
      * @return int
      */
     public int getLevel() {
