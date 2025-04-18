@@ -8,7 +8,7 @@ public class Armor {
     /**
      * Constructor for armor
      *
-     * @param name name of armor
+     * @param name   name of armor
      * @param minVal minimum value of armor
      * @param maxVal maximum value of armor
      */
@@ -29,6 +29,7 @@ public class Armor {
 
     /**
      * Returns minimum value for armor
+     * 
      * @return int
      */
     public int getMin() {
@@ -37,6 +38,7 @@ public class Armor {
 
     /**
      * Returns maximum value for armor
+     * 
      * @return int
      */
     public int getMax() {

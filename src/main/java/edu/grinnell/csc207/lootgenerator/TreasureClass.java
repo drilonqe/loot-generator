@@ -8,7 +8,8 @@ public class TreasureClass {
 
     /**
      * Constructor for TreasureClass
-     * @param name Name of Treasure class
+     * 
+     * @param name  Name of Treasure class
      * @param items Item options to be dropped
      */
     public TreasureClass(String name, List<String> items) {
