@@ -79,6 +79,14 @@ public class LootGenerator {
         }
     }
 
+    /**
+     * Recursively returns a random base item from a treasure class.
+     *  
+     * @param tcname name of treasure class
+     * @param tcdata all treasure classes
+     * @param r random number
+     * @return name of base item
+     */
     public static String getDrop(String tcname, Map<String, TreasureClass> tcdata, Random r) {
         TreasureClass cur = tcdata.get(tcname);
         String drop = randomElement(cur.getItems(), r);
@@ -86,10 +94,17 @@ public class LootGenerator {
         if (tcdata.containsKey(drop)) {
             return getDrop(drop, tcdata, r); // if it returns another tc, recurse
         } else {
-            return drop;
+            return drop; // base item
         }
     }
     
+    /**
+     * Returns a random element from the given list.
+     * 
+     * @param list list to chose randomly from
+     * @param r random number
+     * @return a random element form the list
+     */
     public static <T> T randomElement(List<T> list, Random r) {
         return list.get(r.nextInt(list.size()));
     }
