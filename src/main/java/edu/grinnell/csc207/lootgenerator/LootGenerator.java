@@ -67,7 +67,7 @@ public class LootGenerator {
             System.out.println(itemName);
             System.out.println("Defense: " + defense);
             System.out.print(buf.toString());
-        
+
             System.out.print("\nFight again [y/n]? ");
             String input = s.nextLine().toLowerCase();
             while (!input.equals("n") && !input.equals("y")) {
@@ -75,16 +75,16 @@ public class LootGenerator {
                 input = s.nextLine().toLowerCase();
             }
             running = input.equals("y");
-            
+
         }
     }
 
     /**
      * Recursively returns a random base item from a treasure class.
-     *  
+     * 
      * @param tcname name of treasure class
      * @param tcdata all treasure classes
-     * @param r random number
+     * @param r      random number
      * @return name of base item
      */
     public static String getDrop(String tcname, Map<String, TreasureClass> tcdata, Random r) {
@@ -97,13 +97,13 @@ public class LootGenerator {
             return drop; // base item
         }
     }
-    
+
     /**
      * Returns a random element from the given list.
      * 
-     * @param list list to chose randomly from
-     * @param r random number
-     * @return a random element form the list
+     * @param list list to chose randomly from.
+     * @param r    random number.
+     * @return a random element form the list.
      */
     public static <T> T randomElement(List<T> list, Random r) {
         return list.get(r.nextInt(list.size()));
