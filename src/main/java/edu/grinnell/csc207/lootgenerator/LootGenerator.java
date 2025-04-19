@@ -79,7 +79,7 @@ public class LootGenerator {
         }
     }
 
-    private static String getDrop(String tcname, Map<String, TreasureClass> tcdata, Random r) {
+    public static String getDrop(String tcname, Map<String, TreasureClass> tcdata, Random r) {
         TreasureClass cur = tcdata.get(tcname);
         String drop = randomElement(cur.getItems(), r);
 
@@ -89,8 +89,8 @@ public class LootGenerator {
             return drop;
         }
     }
-
-    private static <T> T randomElement(List<T> list, Random r) {
+    
+    public static <T> T randomElement(List<T> list, Random r) {
         return list.get(r.nextInt(list.size()));
     }
 }
