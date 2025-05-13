@@ -2,6 +2,10 @@ package edu.grinnell.csc207.lootgenerator;
 
 import java.util.List;
 
+/**
+ * The treasure class defines the class of items
+ * that the monster drops when it dies.
+ */
 public class TreasureClass {
     private String name;
     private List<String> items;

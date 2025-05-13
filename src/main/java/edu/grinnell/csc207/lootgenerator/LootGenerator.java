@@ -13,11 +13,23 @@ import java.util.Scanner;
 // used this source for generating random numbers in a range
 // https://www.baeldung.com/java-generating-random-numbers-in-range
 
+/**
+ * Class for generating random loot dropped by slaying monsters.
+ * Loot is generated based on the Diablo game.
+ */
 public class LootGenerator {
     /** The path to the dataset (ither the small or large set). */
     // private static final String DATA_SET = "data/small";
     private static final String DATA_SET = "data/large";
-
+/**
+ * Main method for running the loot generation program.
+ * It loads all game data. Selects a random monster to be slain.
+ * Displays final item after it looks through treasure class and 
+ * applies its affixes. It also enables program to run until user 
+ * stops it.
+ * @param args Command line arguments.
+ * @throws IOException If lines are not read.
+ */
     public static void main(String[] args) throws IOException {
         System.out.println("This program kills monsters and generates loot!");
 
@@ -101,6 +113,7 @@ public class LootGenerator {
     /**
      * Returns a random element from the given list.
      * 
+     * @param <T> type of element in list.
      * @param list list to chose randomly from.
      * @param r    random number.
      * @return a random element form the list.

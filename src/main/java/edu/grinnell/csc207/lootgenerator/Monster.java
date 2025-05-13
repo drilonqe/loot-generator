@@ -1,5 +1,8 @@
 package edu.grinnell.csc207.lootgenerator;
 
+/**
+ * Class for monsters in Diablo game, and their treasure class.
+ */
 public class Monster {
     private String name;
     private String type;

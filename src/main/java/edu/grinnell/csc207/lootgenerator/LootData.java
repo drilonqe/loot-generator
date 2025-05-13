@@ -7,14 +7,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-// CITATION:
 
-// used to check how to read file string separated by tab:
-// https://stackoverflow.com/questions/19575308/read-a-file-separated-by-tab-and-put-the-words-in-an-arraylist
+// CITATION:
 
 // used this source to check how to read textfile in java.
 // https://www.geeksforgeeks.org/different-ways-reading-text-file-java/
 
+/**
+ * Class that contains methods for parsing loot data when generating.
+ */
 public class LootData {
 
     /**

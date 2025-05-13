@@ -1,5 +1,10 @@
 package edu.grinnell.csc207.lootgenerator;
 
+/**
+ * Class for affixes that can be applied to item.
+ * Can be both a prefix and suffix of an item.
+ * Each affix has a stat modifier together with the name.
+ */
 public class Affix {
     private String name;
     private String mod1code;

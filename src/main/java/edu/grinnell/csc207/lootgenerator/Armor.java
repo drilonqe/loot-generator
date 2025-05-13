@@ -1,5 +1,8 @@
 package edu.grinnell.csc207.lootgenerator;
 
+/**
+ * Class for armor items with a name and range of values it has
+ */
 public class Armor {
     private String name;
     private int minVal;
