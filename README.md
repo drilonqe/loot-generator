@@ -1,6 +1,31 @@
-# Project: Loot Generator
+# Project: Loot Generator REVISION
 
 Authors: Drilon Qerimi
+
+### What I needed to revise:
+Grading comment:
+For an E, fix the style violations (9). You can get a list of them with the command mvn checkstyle:check. Well done!
+
+### CHANGELOG
+Fixed all the checkstyle violations. They were mostly because of missing
+javadocs for classes. Now checkstyle runs with 0 violations.
+
+@zakrajsek:loot-generator$ mvn checkstyle:check
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< edu.grinnell.csc207:LootGenerator >------------------
+[INFO] Building LootGenerator 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.6.0:check (default-cli) @ LootGenerator ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.614 s
+
 
 ## Resources
 
